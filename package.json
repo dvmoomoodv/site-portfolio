@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/dvmoomoodv/site-portfolio",
   "name": "site-portfolio",
   "version": "1.0.0",
   "main": "index.js",
@@ -6,7 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --config ./config/webpack.config.dev --hot",
     "build": "webpack --config ./config/webpack.config.dev",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "npm run build && gh-pages -b master -d build"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
